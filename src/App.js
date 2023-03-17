@@ -23,7 +23,7 @@ function App() {
           </Toolbar>
         </AppBar>
         <Container>
-          <UserTable />
+          <UserTable sx={{ marginBottom: 5 }} />
         </Container>
       </React.Fragment>
     </div>

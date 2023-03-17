@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisite
+
+Install npm
+
+Instiall material ui\
+https://mui.com/material-ui/getting-started/installation/
+
 ## Available Scripts
 
 In the project directory, you can run:
