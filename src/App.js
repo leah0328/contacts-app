@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import Toolbar from "@mui/material/Toolbar";
+import CssBaseline from "@mui/material/CssBaseline";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import UserTable from "./UserTable";
+import { AppBar } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <React.Fragment>
+        <CssBaseline />
+        <AppBar position="static" sx={{ marginBottom: 5 }}>
+          <Toolbar>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, align: "center" }}
+            >
+              Contacts
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Container>
+          <UserTable />
+        </Container>
+      </React.Fragment>
     </div>
   );
 }
